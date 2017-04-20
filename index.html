@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="NarrowItDownApp">
+<head>
+	<title>Lunch Checker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/general.css">
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div ng-controller="NarrowItDownController as narrow">
+				<div class="col-md-12">
+					<h1>MOD 3</h1>
+				</div>
+				<div class="col-md-12">
+					<input type="text" ng-model="narrow.search" placeholder="Search">
+				</div>
+				<div class="col-md-12">
+					<button ng-click="narrow.getMatchedMenuItems(narrow.search)">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
