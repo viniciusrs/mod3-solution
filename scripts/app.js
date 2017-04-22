@@ -11,13 +11,13 @@
 	function NarrowItDownController(MenuSearchService){
 		var narrow = this;
 		narrow.search = "";
+		narrow.found = true;
 
 		narrow.dataFilter = function(searchTerm){
 			narrow.found = MenuSearchService.getDataFound(searchTerm);
 		}
 
 		narrow.remove = function(index){
-			console.log("a");
 			MenuSearchService.removeItem(index);
 		}
 	}
@@ -39,7 +39,6 @@
 	function MenuSearchService(ApiBasePath, $http){
 		var service = this;
 		service.search = "";
-		service.found = true;
 		service.dataRetrieve = false;
 		service.foundItems = [];
 
@@ -71,6 +70,8 @@
 			if (searchTerm.length === 0){
 				return false;
 			}
+
+			searchTerm = searchTerm.toLowerCase();
 
 			var found = [];
 
