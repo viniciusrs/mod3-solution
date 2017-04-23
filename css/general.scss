@@ -6,21 +6,20 @@ body
 
 	.header
 	{	
-		margin-bottom: 50px;
 
 		h1
 		{
 		font-size: 50px;
 		text-align: center;
+		text-transform: uppercase;
 		}
-	}
 
-	.listItems
-	{
-
-		p
+		span
 		{
+			display: block;
 			color: red;
+			text-align: center;
+			font-size: 50px
 		}
 	}
 
@@ -32,19 +31,54 @@ body
 
 	.search
 	{
-		margin-top: 100px;
+		margin-top: 80px;
 		text-align: center;
+
+		label
+		{
+			display: block;
+		}
 	}
 
 	.dataLoading
 	{
 		opacity: 0.9;
 		width: 300px;
-		height: 300px;
-		margin: auto;
+		height: 200px;
 		z-index: 1;
+		margin: auto;
+		margin-top: 30px;
 		background-color: #cccccc;
 		text-align: center;
 		border: 1px solid black;
+		border-radius: 20px;
+		position: relative;
+
+		img
+		{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 10px;
+			left: 100px;
+		}
+
+		p
+		{
+			position: absolute;
+			top: 130px;
+			left: 100px;
+		}
 	}
+
+	@media (max-width: 992px)
+	{
+		.dataLoading
+		{
+			margin-top: -100px;
+		}
+
+	}
+
+	/* Directive Styles */
 }

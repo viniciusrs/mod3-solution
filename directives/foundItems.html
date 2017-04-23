@@ -1,13 +1,15 @@
-<div class="col-md-4
+<div ng-repeat="items in found">
+	<div class="col-md-4
 			col-sm-6
 			col-xs-12">
-	<div class="listItems">
-		<div ng-repeat="items in found">
-			<p>{{items.name}}</p>
-			<p>{{items.description}}</p>
+		<div class="listItems">
+			<p>Name: <span>{{items.name}}</span></p>
+			<p>Description: <span>{{items.description}}</span></p>
 			<button ng-click="onRemove({index: $index});">Remove Item</button>
 		</div>
 	</div>	
 </div>	
 
-<p class="notFound" ng-if="!found">Nothing found</p>
+<div class="col-md-12">
+	<p class="notFound" ng-if="!found">Nothing found</p>
+</div>

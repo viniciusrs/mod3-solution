@@ -23,8 +23,7 @@
 
 		$timeout(function() {
 			narrow.dataRetrieve = MenuSearchService.getRetrieve();
-			console.log(narrow.dataRetrieve);
-		},2000);
+		}, 1500);
 	}
 
 	function foundItems(){
