@@ -3,28 +3,46 @@
 <head>
 	<title>Lunch Checker</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/general.css">
 	<script src="scripts/jquery.min.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
 	<script src="scripts/angular.min.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<h1>Chinese Food Menu</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="row">
 			<div ng-controller="NarrowItDownController as narrow">
 				<div class="col-md-12">
-					<h1>MOD 3</h1>
-				</div>
-				<div class="col-md-12">
-					<input type="text" ng-model="narrow.search" placeholder="Search">
-				</div>
-				<div class="col-md-12">
-					<button ng-click="narrow.dataFilter(narrow.search)">Search</button>
+					<div class="search">
+						<input type="text" ng-model="narrow.search" placeholder="Search">
+						<button ng-click="narrow.dataFilter(narrow.search)">Search</button>
+					</div>
 				</div>
 
 				<found-items found="narrow.found" on-remove="narrow.remove(index)"></found-items>
+
+				<div ng-if="!narrow.dataRetrieve">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="dataLoading">
+								<p>Loading Data...</p>
+								<img src="img/loading.gif">
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

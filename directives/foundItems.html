@@ -1,13 +1,13 @@
-<table>
-	<tr ng-repeat-start="items in found">
-		<td>{{items.name}}</td>
-	</tr>
-	<tr>
-		<td>{{items.description}}</td>
-	</tr>
-	<tr ng-repeat-end>
-		<td><button ng-click="onRemove({index: $index});">Remove Item</button></td>
-	</tr>
-</table>	
+<div class="col-md-4
+			col-sm-6
+			col-xs-12">
+	<div class="listItems">
+		<div ng-repeat="items in found">
+			<p>{{items.name}}</p>
+			<p>{{items.description}}</p>
+			<button ng-click="onRemove({index: $index});">Remove Item</button>
+		</div>
+	</div>	
+</div>	
 
-<p ng-if="!found">Nothing found</p>
+<p class="notFound" ng-if="!found">Nothing found</p>

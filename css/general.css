@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+body .header {
+  margin-bottom: 50px; }
+
+body .header h1 {
+  font-size: 50px;
+  text-align: center; }
+
+body .listItems p {
+  color: red; }
+
+body .notFound {
+  font-size: 20px;
+  color: red; }
+
+body .search {
+  margin-top: 100px;
+  text-align: center; }
+
+body .dataLoading {
+  opacity: 0.9;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  z-index: 1;
+  background-color: #cccccc;
+  text-align: center;
+  border: 1px solid black; }
