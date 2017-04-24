@@ -27,8 +27,11 @@ body
 
 	.notFound
 	{
-		font-size: 20px;
+		font-size: 16px;
+		text-align: center;
 		color: red;
+
+		margin-top: 20px;
 	}
 
 	.search
@@ -87,7 +90,7 @@ body
 	.listItems
 	{
 		border: 1px solid black;
-		border-radius: 2px;
+		border-radius: 4px;
 		height: 180px;
 		width: 100%;
 		margin-top: 50px;
@@ -97,11 +100,15 @@ body
 		p
 		{
 			padding: 25px 10px 1px 10px;
+
 			font-weight: bold;
+			font-size: 14px;
 
 			span
 			{
 				font-weight: normal;
+				font-style: italic;
+				font-size: 12px;
 			}
 		}
 
@@ -112,10 +119,17 @@ body
 			right: 0;
 			width: 80px;
 			border-left: 1px solid black;
-			border-bottom: 1px solid black;		
+			border-bottom: 1px solid black;
+			cursor: pointer;	
+			transition: all 0.3s;
 
 			font-size: 10px;
 			text-align: center;
+		}
+
+		div:hover
+		{
+			background-color: #cccccc;
 		}
 	}
 }

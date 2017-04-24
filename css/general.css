@@ -17,8 +17,10 @@ body .header span {
   font-size: 50px; }
 
 body .notFound {
-  font-size: 20px;
-  color: red; }
+  font-size: 16px;
+  text-align: center;
+  color: red;
+  margin-top: 20px; }
 
 body .search {
   margin-top: 80px;
@@ -58,7 +60,7 @@ body .dataLoading p {
 
 body .listItems {
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
   height: 180px;
   width: 100%;
   margin-top: 50px;
@@ -67,10 +69,13 @@ body .listItems {
 
 body .listItems p {
   padding: 25px 10px 1px 10px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 14px; }
 
 body .listItems p span {
-  font-weight: normal; }
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px; }
 
 body .listItems div {
   position: absolute;
@@ -79,5 +84,10 @@ body .listItems div {
   width: 80px;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
   font-size: 10px;
   text-align: center; }
+
+body .listItems div:hover {
+  background-color: #cccccc; }
