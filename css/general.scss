@@ -4,6 +4,8 @@ body
 	margin: 0px;
 	border: 0px;
 
+	font-family: 'Quicksand', sans-serif;
+
 	.header
 	{	
 
@@ -81,4 +83,39 @@ body
 	}
 
 	/* Directive Styles */
+
+	.listItems
+	{
+		border: 1px solid black;
+		border-radius: 2px;
+		height: 180px;
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 10px;
+		position: relative;
+
+		p
+		{
+			padding: 25px 10px 1px 10px;
+			font-weight: bold;
+
+			span
+			{
+				font-weight: normal;
+			}
+		}
+
+		div
+		{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80px;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;		
+
+			font-size: 10px;
+			text-align: center;
+		}
+	}
 }

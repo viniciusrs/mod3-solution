@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   border: 0px;
+  font-family: 'Quicksand', sans-serif;
   /* Directive Styles */ }
 
 body .header h1 {
@@ -54,3 +55,29 @@ body .dataLoading p {
 @media (max-width: 992px) {
   body .dataLoading {
     margin-top: -100px; } }
+
+body .listItems {
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 180px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  position: relative; }
+
+body .listItems p {
+  padding: 25px 10px 1px 10px;
+  font-weight: bold; }
+
+body .listItems p span {
+  font-weight: normal; }
+
+body .listItems div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 10px;
+  text-align: center; }

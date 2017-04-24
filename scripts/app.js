@@ -24,6 +24,7 @@
 		$timeout(function() {
 			narrow.dataRetrieve = MenuSearchService.getRetrieve();
 		}, 1500);
+		
 	}
 
 	function foundItems(){
