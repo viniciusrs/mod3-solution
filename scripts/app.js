@@ -81,7 +81,7 @@
 			var found = [];
 
 			for (var i = 0; i < service.items.menu_items.length; i++){
-				if (service.items.menu_items[i].name.toLowerCase().indexOf(searchTerm) !== -1){
+				if (service.items.menu_items[i].description.toLowerCase().indexOf(searchTerm) !== -1){
 					found.push(service.items.menu_items[i]);
 				}
 			}
