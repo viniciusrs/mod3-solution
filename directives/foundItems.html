@@ -3,6 +3,7 @@
 			col-sm-6
 			col-xs-12">
 		<div class="listItems">
+			<p class="shortName">{{items.short_name}}</p>
 			<p>Name: <span>{{items.name}}</span></p>
 			<p>Description: <span>{{items.description}}</span></p>
 			<div ng-click="onRemove({index: $index});">Remove Item</div>

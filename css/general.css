@@ -77,6 +77,15 @@ body .listItems p span {
   font-style: italic;
   font-size: 12px; }
 
+body .listItems .shortName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 3px 0 3px;
+  font-weight: normal;
+  font-size: 8px;
+  text-align: center; }
+
 body .listItems div {
   position: absolute;
   top: 0;
