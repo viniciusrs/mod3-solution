@@ -29,7 +29,8 @@
 				<div class="col-md-12">
 					<div class="search">
 						<label for="narrow-search">Narrow Down it For Me!</label>
-						<input id="narrow-search" type="text" ng-model="narrow.search" placeholder="Search">
+						<input id="narrow-search" type="text" ng-model="narrow.search" placeholder="Search"
+						ng-keyup="$event.keyCode == 13 && narrow.dataFilter(narrow.search)">
 						<button ng-click="narrow.dataFilter(narrow.search)">Search</button>
 					</div>
 				</div>
